@@ -16,7 +16,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   const headers: Headers = new Headers();
   headers.set("Location", `${process.env.NEXT_PUBLIC_BASE_URL}/`);
   const response: NextResponse = NextResponse.redirect(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/${path}]`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/${path}`,
     {
       headers: headers,
       status: 302,
